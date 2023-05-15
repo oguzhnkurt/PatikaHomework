@@ -23,8 +23,6 @@ public class main {
         double totalSummeryAverageSquareMeters = processHouse.getTotalSummeryAverageSquareMeters();
         double totalHousesAverageSquareMeters= processHouse.getTotalHousesAverageSquareMeters();
 
-        //kullanıcıdan değer alabilirsin t p için daha sonra değerleri yazdırırsın. Listleri forla yazdır diğerlerini normal.
-
         System.out.println("Home : ");
         for(House house : homelist){
             System.out.println("id :" +house.id);
@@ -37,7 +35,7 @@ public class main {
 
         }
         System.out.println("-----------------------------------------------");
-        System.out.println("villalar : ");
+        System.out.println("Villas : ");
         for(House house : villalist){
             System.out.println("id :" +house.id);
             System.out.println("Type : " +house.houseType);
@@ -49,7 +47,7 @@ public class main {
 
         }
         System.out.println("-----------------------------------------------");
-        System.out.println("yazlıklar : ");
+        System.out.println("Summeries : ");
         for(House house : summerylist){
             System.out.println("id :" +house.id);
             System.out.println("Type : " +house.houseType );
@@ -78,7 +76,7 @@ public class main {
 
         List<House> allHousesByLivRoomsAndRoomsCount = processHouse.getAllHousesByLivRoomsAndRoomsCount(lcount,rcount);
 
-        System.out.println("Aradığımız Sonuç : ");
+        System.out.println("What you looking for : ");
 
         for(House house : allHousesByLivRoomsAndRoomsCount){
             System.out.println("id :" +house.id);
